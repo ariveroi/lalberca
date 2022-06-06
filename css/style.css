@@ -1,0 +1,424 @@
+@import url(//db.onlinewebfonts.com/c/6a841ed6f85d1f4ecbe6aad4f68956bc?family=Papyrus+Std);
+
+:root {
+  --text-color: #000;
+  --main-color: #bf00a3;
+  --main-hover-color: #bf00a3;
+  --main-active-color: #bf00a3;
+  --main-background-color: #000;
+  --main-border-color: #000;
+
+  --secondary-color: #ffc107;
+  --secondary-hover-color: #ffd54f;
+  --secondary-active-color: #ffd54f;
+  --secondary-background-color: rgb(0, 0, 0, 0.03);
+  --secondary-border-color: #ffc107;
+
+  --font-size: 20px;
+  --max-width: 1400px;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: var(--secondary-background-color);
+}
+
+body {
+  background-color: #fff;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+  /* border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-item {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: "Papyrus Std";
+  font-size: 1.7rem;
+  font-weight: 200;
+  font-style: oblique;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.section-sutitle {
+  font-family: "Papyrus Std";
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: oblique;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.padd-15 {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 26px;
+}
+
+/* HEADER */
+.content-header {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  max-width: var(--max-width);
+  margin: auto;
+  width: 100%;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-header .header-title {
+  font-family: "Papyrus Std";
+  font-size: 50px;
+  font-weight: 200;
+  font-style: oblique;
+  margin: 0;
+  color: var(--main-color);
+}
+
+.content-header .spacer {
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.content-header .nav {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content-header .nav .nav-item {
+  flex: 0 0 25%;
+  border-right: 1px solid var(--main-border-color);
+}
+
+.content-header .nav .nav-item:last-child {
+  border-right: none;
+}
+
+.content-header .nav .nav-item a:hover {
+  color: var(--main-hover-color);
+}
+
+/* CONTENT */
+.main-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  max-width: var(--max-width);
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HOME */
+
+.home {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.home-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+  /* padding: 40px; */
+  text-align: end;
+  position: relative;
+  margin-right: 30px;
+}
+
+.home-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 20%;
+  /* background-color: var(--main-color); */
+  border-top: 1px solid var(--main-color);
+  border-left: 1px solid var(--main-color);
+}
+
+.home-img::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 40%;
+  height: 20%;
+  /* background-color: var(--main-color); */
+  border-bottom: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color);
+}
+
+.home-img img {
+  width: 100%;
+}
+
+.home-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home-content .home-content-info {
+  text-align: justify;
+}
+
+/* MENU */
+.menu {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid var(--main-color);
+}
+.menu .menu-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-img {
+  width: 100%;
+  height: 200px;
+  background-image: url("../assets/primeros.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.menu .menu-content .platos {
+  width: 100%;
+  height: fit-content;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.menu-title {
+  font-family: "Papyrus Std";
+  font-size: 1.7rem;
+  font-weight: 200;
+  font-style: oblique;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+.menu .menu-content .platos ul {
+  list-style: none;
+}
+
+/* ABOUT */
+.about {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.about .about-img {
+  width: 50%;
+  height: 250px;
+  float: left;
+  background-image: url("../assets/about_us.jpg");
+  background-size: cover;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.about p {
+  line-height: 26px;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+/* CONTACT */
+.contact {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  min-height: 10vh;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .spacer {
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--main-color);
+}
+
+.footer .footer-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.footer .footer-content .footer-dir {
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-content .footer-dir a {
+  font-size: 13px;
+}
+
+.footer .footer-content .footer-dir a {
+  margin-bottom: 5px;
+}
+
+.footer .footer-content .footer-links {
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer .footer-content .footer-nav {
+  list-style: none;
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer .footer-content .footer-nav .nav-item span {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+  .home-img {
+    display: none;
+  }
+
+  .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .about .about-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .footer .footer-content {
+    flex-direction: column;
+  }
+  .footer .footer-content .footer-dir {
+    margin-bottom: 20px;
+    flex: 0 0 70% !important;
+    max-width: 70%;
+  }
+
+  .footer .footer-content .footer-links {
+    margin-bottom: 20px;
+    width: 70%;
+    max-width: 70%;
+  }
+
+  .footer .footer-content .footer-nav {
+    display: block;
+  }
+
+  .footer .footer-content .footer-nav .nav-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+}
